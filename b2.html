@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b8ffcf0824.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="b2.css">
+    <script src="./b2.js"></script>
+</head>
+<body>
+
+<div class="search-container">
+  <input type="text" class="search-bar" placeholder="Search">
+  <div class="search-icon" onclick="toggleSearchBar()">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
+  <script>
+        let isSearchBarExpanded = false;
+const searchBar = document.querySelector('.search-bar');
+
+function toggleSearchBar() {
+  isSearchBarExpanded = !isSearchBarExpanded;
+  searchBar.style.width = isSearchBarExpanded ? '200px' : '40px';
+  searchBar.focus();
+}
+  </script>
+</div>
+
+
+
+</body>
+</html>
